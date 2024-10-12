@@ -1,0 +1,103 @@
+/* common css start */
+/* fonts links */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+:root {
+  /* fonts family name */
+  --SpaceGrotesk: "Space Grotesk", sans-serif;
+  --inter: "Inter", sans-serif;
+  /* colors */
+  --brand: #394792;
+  --secondery: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul,
+ol {
+  list-style: none;
+}
+.container {
+  max-width: 1200px;
+}
+/* common css end */
+/* nav start */
+#nav {
+  padding: 23px 0;
+  position: relative;
+  background-color: var(--brand);
+}
+#nav .navbar-brand {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+#nav .navbar-nav {
+  column-gap: 60px;
+}
+#nav .navbar-nav .nav-item .nav-link {
+  color: var(--secondery);
+  font-family: var(--inter);
+  font-size: 18px;
+  letter-spacing: -0.81px;
+  position: relative;
+  padding: 0;
+}
+#nav .navbar-nav .nav-item .nav-link.active::after {
+  width: 100%;
+}
+#nav .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  width: 00%;
+  height: 1px;
+  background-color: var(--secondery);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#nav .navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+#nav .loginreg {
+  display: flex;
+}
+#nav .loginreg a {
+    color: var(--secondery);
+    font-family: var(--inter);
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.81px;
+    text-transform: capitalize;
+    border-radius: 30px;
+    padding: 16px 40px;
+    border: 1px solid transparent;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+#nav .loginreg a:hover{
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+}
+/* nav end */
