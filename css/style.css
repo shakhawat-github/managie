@@ -18,6 +18,9 @@
   outline: 0;
   box-sizing: border-box;
 }
+p {
+  margin: 0;
+}
 a {
   text-decoration: none;
   display: inline-block;
@@ -28,6 +31,14 @@ ol {
 }
 .container {
   max-width: 1200px;
+}
+.heading {
+  color: #232323;
+  font-family: var(--SpaceGrotesk);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -2.4px;
 }
 /* common css end */
 /* nav start */
@@ -81,23 +92,140 @@ ol {
   display: flex;
 }
 #nav .loginreg a {
-    color: var(--secondery);
-    font-family: var(--inter);
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: -0.81px;
-    text-transform: capitalize;
-    border-radius: 30px;
-    padding: 16px 40px;
-    border: 1px solid transparent;
-    transition: .4s;
-    -webkit-transition: .4s;
-    -moz-transition: .4s;
-    -ms-transition: .4s;
-    -o-transition: .4s;
+  color: var(--secondery);
+  font-family: var(--inter);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.81px;
+  text-transform: capitalize;
+  border-radius: 30px;
+  padding: 16px 40px;
+  border: 1px solid transparent;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
 }
-#nav .loginreg a:hover{
-    border: 1px solid rgba(255, 255, 255, 0.4);
-
+#nav .loginreg a:hover {
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 /* nav end */
+/* banner start */
+#banner {
+  background-color: var(--brand);
+  padding: 150px 0 30.02px;
+}
+#banner .txt h1 {
+  color: var(--secondery);
+  font-family: var(--SpaceGrotesk);
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -3.2px;
+  position: relative;
+}
+#banner .txt h1 .headingshap {
+  position: absolute;
+  bottom: -12px;
+  right: 12px;
+}
+#banner .txt .bnrdescript {
+  color: var(--secondery);
+  font-family: var(--inter);
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: -0.81px;
+  max-width: 560px;
+  margin-top: 32px;
+}
+#banner .txt .bnrbtn {
+  margin-top: 40px;
+}
+#banner .txt .bnrbtn a:last-child {
+  margin-left: 24px;
+}
+#banner .txt .bnrbtn a {
+  color: var(--secondery);
+  font-family: var(--inter);
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: -0.81px;
+  padding: 18px 32px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#banner .txt .bnrbtn a:hover {
+  color: var(--brand);
+  background-color: var(--secondery);
+}
+#banner .txt .counter {
+  margin-top: 60px;
+  display: flex;
+  column-gap: 80px;
+}
+#banner .txt .counter .item {
+  max-width: 88px;
+  position: relative;
+}
+#banner .txt .counter .item::after {
+  content: "";
+  width: 1px;
+  height: 80%;
+  background-color: rgba(255, 255, 255, 0.16);
+  position: absolute;
+  top: 10%;
+  right: -45%;
+}
+#banner .txt .counter .item:last-child:after {
+  display: none;
+}
+#banner .txt .counter .item h2 {
+  color: var(--secondery);
+  font-family: var(--SpaceGrotesk);
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -1.28px;
+}
+#banner .txt .counter .item p {
+  margin-top: 8px;
+  color: var(--secondery);
+  font-family: var(--inter);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.54px;
+  opacity: 0.8;
+}
+#banner .bnrimage {
+  position: relative;
+}
+#banner .bnrimage .arrowbnr {
+  position: absolute;
+  top: 0;
+  left: -8%;
+}
+#banner .bnrimage .bnrshedule {
+  margin: 41% 0 0 -10%;
+}
+
+/* banner end */
+/* management start */
+#management {
+  padding: 100px 0;
+}
+#management .title {
+  text-align: center;
+  position: relative;
+}
+#management .title .headshap {
+  position: absolute;
+  top: 31%;
+  right: 24%;
+}
+/* management end */
