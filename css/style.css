@@ -18,9 +18,6 @@
   outline: 0;
   box-sizing: border-box;
 }
-p {
-  margin: 0;
-}
 a {
   text-decoration: none;
   display: inline-block;
@@ -31,6 +28,7 @@ ol {
 }
 .container {
   max-width: 1200px;
+  margin: 0 auto;
 }
 .heading {
   color: #232323;
@@ -44,20 +42,19 @@ ol {
 /* nav start */
 #nav {
   padding: 23px 0;
-  position: relative;
   background-color: var(--brand);
 }
-#nav .navbar-brand {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+#nav .navbox{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  align-items: center;
+}
+#nav .logo {
+  justify-self: center;
 }
 #nav .navbar-nav {
+  display: grid;
+  grid-template-columns: repeat(4 , auto);
   column-gap: 60px;
 }
 #nav .navbar-nav .nav-item .nav-link {
@@ -89,7 +86,7 @@ ol {
   width: 100%;
 }
 #nav .loginreg {
-  display: flex;
+  justify-self: end;
 }
 #nav .loginreg a {
   color: var(--secondery);
@@ -116,6 +113,10 @@ ol {
   background-color: var(--brand);
   padding: 150px 0 30.02px;
 }
+#banner .bnrbox{
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
 #banner .txt h1 {
   color: var(--secondery);
   font-family: var(--SpaceGrotesk);
@@ -127,8 +128,8 @@ ol {
 }
 #banner .txt h1 .headingshap {
   position: absolute;
-  bottom: -12px;
-  right: 12px;
+  bottom: -11px;
+  right: 55px;
 }
 #banner .txt .bnrdescript {
   color: var(--secondery);
@@ -208,10 +209,10 @@ ol {
 #banner .bnrimage .arrowbnr {
   position: absolute;
   top: 0;
-  left: -8%;
+  left: -13%;
 }
 #banner .bnrimage .bnrshedule {
-  margin: 41% 0 0 -10%;
+  margin: 40% 0 0 -15%;
 }
 
 /* banner end */
