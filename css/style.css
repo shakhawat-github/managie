@@ -44,9 +44,9 @@ ol {
   padding: 23px 0;
   background-color: var(--brand);
 }
-#nav .navbox{
+#nav .navbox {
   display: grid;
-  grid-template-columns: repeat(3 , 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
 }
 #nav .logo {
@@ -54,7 +54,7 @@ ol {
 }
 #nav .navbar-nav {
   display: grid;
-  grid-template-columns: repeat(4 , auto);
+  grid-template-columns: repeat(4, auto);
   column-gap: 60px;
 }
 #nav .navbar-nav .nav-item .nav-link {
@@ -113,7 +113,7 @@ ol {
   background-color: var(--brand);
   padding: 150px 0 30.02px;
 }
-#banner .bnrbox{
+#banner .bnrbox {
   display: grid;
   grid-template-columns: 60% 40%;
 }
@@ -227,6 +227,34 @@ ol {
 #management .title .headshap {
   position: absolute;
   top: 31%;
-  right: 24%;
+  right: 25%;
+}
+#management .managementbox {
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 32px;
+  margin-top: 64px;
+}
+#management .managementbox .item {
+  border-radius: 16px;
+}
+#management .managementbox .item h3 {
+  color: #232323;
+  font-family: "Space Grotesk";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: -1.2px;
+  margin-top: 24px;
+}
+#management .managementbox .item p {
+  color: #757575;
+  font-family: var(--inter);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 170%;
+  letter-spacing: -0.9px;
+  margin-top: 16px;
 }
 /* management end */
